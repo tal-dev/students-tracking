@@ -1,0 +1,45 @@
+$inputWidth:300px;
+$inputHeight: 30px; 
+
+.log-container {
+    background: linear-gradient(
+        180deg,
+        #1e84f7 0%,
+        rgba(164, 18, 200, 1) 100%
+    );;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+        
+        input {
+            width: $inputWidth;
+            height: $inputHeight;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            text-indent: 5px;
+            outline: none;
+        }
+
+        button {
+            height: $inputHeight;
+            width: 150px;
+            margin-top: 10px;
+            outline: none;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all 1s;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+    }
+}
